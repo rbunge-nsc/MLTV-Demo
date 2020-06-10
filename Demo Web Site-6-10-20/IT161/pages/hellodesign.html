@@ -1,0 +1,131 @@
+<html>
+
+<head>
+
+<title>
+IT161 Web Authoring 1 Web Page Design
+</title>
+
+
+
+
+
+
+<head>
+
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">
+IT161 Web Authoring 1
+</h1>
+
+<h2 style="text-align:center;">
+Web Page Design
+</h2>
+
+
+<header>
+  <h2>Hello, World!</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="./hellofonts.html">Fonts and Styles</a></li>
+      <li><a href="./hellotables.html">Tables</a></li>
+      <li><a href="../IT161.html">IT161</a></li>
+     
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Hello, World!</h1>
+    <p>A "Hello, World!" program generally is a computer program that outputs or displays the message "Hello, World!". Such a program is very simple in most programming languages, and is often used to illustrate the basic syntax of a programming language. It is often the first program written by people learning to code. It can also be used as a sanity test to make sure that a computer language is correctly installed, and that the operator understands how to use it.</p>
+    <p>Source: <a href = "https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">https://en.wikipedia.org/wiki/%22Hello,_World!%22_program</a>
+  </article>
+</section>
+
+<footer>
+  <p>Thanks to W3Schools for sharing this layout design.</p>
+  <p>Source: <a href= "https://www.w3schools.com/html/html_layout.asp">https://www.w3schools.com/html/html_layout.asp</a>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

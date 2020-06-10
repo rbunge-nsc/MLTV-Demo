@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- This page demostrates some coding techniques for IT102 Introduction to Programming -->
+
+<html>
+
+<head>
+
+<title>
+IT102 Introduction to Programming
+</title>
+
+<!-- "demostyle.css" is an external style sheet -->
+<link id = "css" rel="stylesheet" type="text/css" href="demostyle.css">
+
+<!-- "IT102demo.js" is an external script -->
+<script src="IT102demo.js"></script>
+
+</head>
+
+<!-- This file, "IT102.html", is at the root of the Document Object Model -->
+<body>
+
+<h1>IT102 Introduction to Programming</h1>
+
+<h2>Sample JavaScript</h2>
+
+
+<table style="padding:10px; margin-left:auto; margin-right:auto;">
+<tr>
+<th>
+<p id="msg" style="font-size:200%; font-family:verdana; text-align:center">Hello, World!</p>
+</th>
+</tr>
+<table>
+
+
+<table padding:100px border="0">
+<tr>
+<td>
+<!-- The form action calls an external script -->
+<!-- The button submits a new text -->
+<p>
+<button type="submit" onclick="changeMsg()" style="font-size:20px">Change Message Text</button>
+</p>
+<form name="theForm">
+<br><br>
+<input type="text" value="Hello, World!" style="font-size:30px;"></input>
+</form>
+<br><br>
+
+</td>
+
+<td>
+<!-- The radio buttons control font size -->
+<p style="font-size:20px">Change Font Size</p>
+<input type="radio" id="larger" name="font-size" value="larger" onclick="increaseFontSize()">
+<label for="larger">Larger</label><br>
+<input type="radio" id="smaller" name="font-size" value="smaller" onclick="decreaseFontSize()">
+<label for="smaller">Smaller</label><br>
+<input type="radio" id="same" name="font-size" value="same" onclick="restoreFontSize()">
+<label for="same">Original Size</label><br>
+</td>
+
+<td>
+<!-- The menu selects a font-->
+<p style="font-size:20px">Select a Font</p>
+<select id="fontMenu" size="5" style="font-size:20px;" onchange="changeFontStyle();">
+  <option value = "Times" style="font-size:20px;">Times</option>
+  <option value = "Arial" style="font-size:20px;">Arial</option>
+  <option value = "Comic Sans MS" style="font-size:20px;">Comic Sans MS</option>
+  <option value = "Impact" style="font-size:20px;">Impact</option>
+  <option value = "Verdana" style="font-size:20px;">Verdana</option>
+</select>
+</td>
+
+<td>
+<p style="font-size:20px">Choose a Color</p>
+<label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+<input type="submit" value="Submit" onclick=changeColor();>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+  
+</form>
+
+</body>
+
+</html>

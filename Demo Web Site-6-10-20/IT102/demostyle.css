@@ -1,0 +1,24 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;   
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+td{
+   padding: 40px;
+   vertical-align: top;
+   font-family: verdana;
+}
+
+th{
+   padding: 40px;
+   border: 5px solid black
+}
